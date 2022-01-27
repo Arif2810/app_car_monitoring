@@ -9,7 +9,9 @@
         <th>No</th>
         <th>Customer</th>
         <th>Nama Driver</th>
+        <th>Dari</th>
         <th>Mobil</th>
+        <th>Tujuan</th>
         <th>Tgl. Digunakan</th>
         <th>Tgl. Kembali</th>
         <th>Tgl. Dikembalikan</th>
@@ -25,7 +27,9 @@
         <td><?= $no++; ?></td>
         <td><?= $tr->departement; ?></td>
         <td><?= $tr->nama; ?></td>
+        <td><?= $tr->dari; ?></td>
         <td><?= $tr->merek; ?></td>
+        <td><?= $tr->tujuan; ?></td>
         <td><?= date('d/m/Y', strtotime($tr->tgl_rental)); ?> <br> <?= $tr->jam_rental; ?></td>
         <td><?= date('d/m/Y', strtotime($tr->tgl_kembali)); ?> <br> <?= $tr->jam_kembali; ?></td>
         <td>
