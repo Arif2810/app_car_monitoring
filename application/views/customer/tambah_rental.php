@@ -132,6 +132,11 @@
           <input type="text" name="hm_awal" class="form-control" required>
         </div>
 
+        <div class="form-group">
+          <label for="">No HP</label>
+          <input type="text" name="no_telepon" class="form-control" value="<?= $this->session->userdata('no_telepon'); ?>" readonly>
+        </div>
+
         <button type="submit" class="btn btn-primary">Gunakan</button>
       </form>
       <?php endforeach; ?>

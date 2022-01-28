@@ -15,6 +15,7 @@
         <th>Tgl. Digunakan</th>
         <th>Tgl. Kembali</th>
         <th>Tgl. Dikembalikan</th>
+        <th>No HP</th>
         <th>Konfirmasi</th>
         <th>Status Pengembalian</th>
         <th>Action</th>
@@ -39,6 +40,7 @@
             echo date('d/m/Y', strtotime($tr->tgl_pengembalian)) . ' <br> ' .$tr->jam_pengembalian;
           } ?>
         </td>
+        <td><?= $tr->no_telepon; ?></td>
 
         <td>
           <center>

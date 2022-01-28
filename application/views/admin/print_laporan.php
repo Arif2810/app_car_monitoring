@@ -21,6 +21,7 @@
     <th>Tgl. Digunakan</th>
     <th>Tgl. Kembali</th>
     <th>Tgl. Dikembalikan</th>
+    <th>No. HP</th>
     <th>Departement</th>
     <th>Section</th>
     <th>HM Awal</th>
@@ -47,6 +48,7 @@
         echo date('d/m/Y', strtotime($tr->tgl_pengembalian)) .' - '. $tr->jam_pengembalian;
       } ?>
     </td>
+    <td><?= $tr->no_telepon; ?></td>
     <td><?= $tr->departement; ?></td>
     <td><?= $tr->section; ?></td>
     <td><?= $tr->hm_awal; ?></td>
