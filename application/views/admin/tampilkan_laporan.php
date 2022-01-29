@@ -20,8 +20,19 @@
     </form>
     <hr>
 
-    <div class="btn-group">
-      <a href="<?= base_url(). 'admin/laporan/print_laporan/?dari='.set_value('dari'). '&sampai='.set_value('sampai'); ?>" class="btn btn-sm btn-success" target="_blank"><i class="fas fa-print"></i> Print</a>
+    <!-- <div class="btn-group" style="float: left; margin-right: 10px;">
+      <a href="" class="btn btn-sm btn-success" target="_blank"><i class="fas fa-print"></i> Print</a>
+    </div> -->
+
+    <div class="dropdown">
+      <button class="btn btn-warning btn-sm dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-expanded="false">
+        <i class="fa fa-download"></i> Export / Print
+      </button>
+      <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+        <a href="<?= base_url(). 'admin/laporan/print_laporan/?dari='.set_value('dari'). '&sampai='.set_value('sampai'); ?>" class="dropdown-item" target="_blank"><i class="fas fa-print"></i> Print</a>
+        <a class="dropdown-item" href="<?= base_url(). 'admin/laporan/excel/?dari='.set_value('dari'). '&sampai='.set_value('sampai'); ?>"><i class="far fa-file-excel"></i> EXCEL</a>
+        <a class="dropdown-item" href="#"><i class="fas fa-file-csv"></i> CSV</a>
+      </div>
     </div>
 
     <table class="table table-responsive table-bordered table-striped mt-3">

@@ -33,7 +33,7 @@ class Rental extends CI_Controller{
     $this->load->view('customer/tambah_rental', $data);
     $this->load->view('templates_customer/footer');
   }
-
+ 
   public function tambah_rental_aksi(){
     $id_customer   = $this->session->userdata('id_customer');
     $id_mobil      = $this->input->post('id_mobil');
