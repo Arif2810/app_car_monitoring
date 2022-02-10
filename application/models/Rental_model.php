@@ -5,6 +5,16 @@ class Rental_model extends CI_Model{
   public function get_data($table){
     return $this->db->get($table);
   }
+  
+  public function get_data_mobil($table, $keyword){
+    if($keyword){
+      $this->db->like('merek', $keyword);
+      return $this->db->get($table);
+    }
+    else{
+      return $this->db->get($table);
+    }
+  }
 
   public function get_where($where, $table){
     return $this->db->get_where($table, $where);

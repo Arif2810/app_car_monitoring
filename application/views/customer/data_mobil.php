@@ -21,6 +21,20 @@
 
 <section class="blog-posts grid-system">
   <div class="container">
+
+    <div class="row">
+      <div class="col-md-5">
+        <form action="<?= base_url('customer/data_mobil') ?>" method="post">
+          <div class="input-group mb-3">
+            <input type="text" name="keyword" class="form-control" placeholder="Masukkan pencarian...">
+            <div class="input-group-append">
+              <input class="btn btn-success" name="submit" type="submit">
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+
     <?= $this->session->flashdata('pesan'); ?>
     <div class="all-blog-posts">
       <div class="row">
